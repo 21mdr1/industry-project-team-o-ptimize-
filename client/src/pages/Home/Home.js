@@ -1,7 +1,6 @@
 import ChatBox from '../../components/ChatBox/ChatBox';
 import { useState } from 'react';
 import open from '../../assets/icons/entypo_chat.svg';
-// import close from '../../assets/icons/close-icon-white.svg';
 import close from '../../assets/icons/entypo_chat_close.svg';
 import './Home.scss';
 

@@ -11,9 +11,51 @@
     border-radius: 10px;
     width: 23.7rem;
     height: 33.5rem;
-
-    &__header{
-        position: fixed;
+    border: 0.25px solid $black;
+    
+    &__header {
+        position: sticky;
         background-color: $chat-navy;
+        @include flexbox;
+        border-radius: 7px 7px 10px 10px;
+        padding: 1rem;
+    }
+
+    &__headline {
+        padding-left: 0.67rem;
+    }
+
+    &__title {
+        @include p2($white);
+        font-size: 1.25rem;
+        line-height: 100%;
+    }
+
+    &__subtitle {
+        @include p2($white);
+        font-size: 1rem;
+        line-height: 100%;
+    }
+}
+
+.header-avatar {
+    &__container {
+        border: 3px solid $white;
+        width: 2.25rem;
+        height: 2.25rem;
+        border-radius: 20px;
+        background-image: url('../../assets/icons/bot-image.png');
+        background-position: 50% 50%;
+    }
+
+    &__status {
+        background-color: #08B22D;
+        border: 2px solid $white;
+        border-radius: 20px;
+        width: 0.7rem;
+        height: 0.7rem;
+        position: relative;
+        bottom: -1.4rem;
+        right: -1.4rem;;
     }
 }
