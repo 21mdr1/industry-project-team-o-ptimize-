@@ -1,3 +1,4 @@
+import mia from '../../assets/icons/bot-image.png';
 import "./Message.scss";
 
 function Message({ message }) {
@@ -11,7 +12,7 @@ function Message({ message }) {
                 "Suggested topics: ",
             ],
             buttons: ["End Chat", "Family Vacations" ],
-            time: '05:13px',
+            time: '05:13pm',
         },
     */
 
@@ -21,7 +22,7 @@ function Message({ message }) {
         <div className={`message__container message__container--${name}`}>
             {name === "Mia" && (
             <div className={`message__avatar ${avatar==='' && 'message__avatar--clear'}`}>
-                {avatar && <img src={avatar} alt={name} className='message__avatar-img' />}
+                {avatar && <img src={mia} alt={name} className='message__avatar-img' />}
             </div>)}
 
             <div className={`message__content message__content--${name}`}>

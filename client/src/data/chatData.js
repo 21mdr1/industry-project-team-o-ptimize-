@@ -100,11 +100,13 @@ const chat = [
     buttons: [],
   },
   {
-    name: "You",
-    avatar: "",
+    name: "Mia",
+    avatar: "bot-image.jpg",
     comments: [
       "Here is the link: \n http://www.sample.org/cruisebookingpayment",
     ],
     buttons: [],
   },
 ];
+
+export default chat;
