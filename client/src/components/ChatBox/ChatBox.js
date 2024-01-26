@@ -1,7 +1,7 @@
 import "./ChatBox.scss";
 
-function ChatBox() {
-    return <section className='chat-box'>
+function ChatBox({ className }) {
+    return <section className={`chat-box ${className}` }>
         <p>I'm a chat box</p>
     </section>
 }
