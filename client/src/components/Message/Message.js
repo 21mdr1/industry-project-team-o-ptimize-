@@ -1,19 +1,9 @@
+import { useNavigate } from 'react-router-dom';
+import mia from '../../assets/icons/bot-image.png';
 import "./Message.scss";
 
 function Message({ message }) {
-    /*
-        {
-            name: "Mia",
-            avatar: "bot-image.jpg",
-            commentLoading: "{addThenRemoveCommentLoader()}",
-            comments: [
-                "Hello! \nWhat can I help you with today?",
-                "Suggested topics: ",
-            ],
-            buttons: ["End Chat", "Family Vacations" ],
-            time: '05:13px',
-        },
-    */
+    let navigate = useNavigate();
 
     const { name, avatar, comments, buttons, time } = message;
 
@@ -21,7 +11,7 @@ function Message({ message }) {
         <div className={`message__container message__container--${name}`}>
             {name === "Mia" && (
             <div className={`message__avatar ${avatar==='' && 'message__avatar--clear'}`}>
-                {avatar && <img src={avatar} alt={name} className='message__avatar-img' />}
+                {avatar && <img src={mia} alt={name} className='message__avatar-img' />}
             </div>)}
 
             <div className={`message__content message__content--${name}`}>
@@ -29,7 +19,7 @@ function Message({ message }) {
 
                 {comments.map((comment) => {
                     return (
-                        <p className={`message message--${name}`}>{comment}</p>
+                        <p className={`message message--${name}`} onClick={() => {comment.match(/http:\/\//) && navigate('/checkout')}}>{comment}</p>
                     )
                 })}
 
