@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="43px" height="43px" viewBox="0 0 43 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Check Mark</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile-Email-Signup-Confirmation" transform="translate(-166.000000, -237.000000)">
+            <g id="Confirmation-Message" transform="translate(16.000000, 236.000000)">
+                <g id="Check-Mark" transform="translate(149.000000, 0.000000)">
+                    <rect id="Rectangle" x="0" y="0" width="45" height="45"></rect>
+                    <path d="M36.1979054,16.2443313 L36.1979054,16.2492325 C35.9569542,16.2394373 35.718262,16.2989877 35.5102776,16.420786 L16.5660977,27.2138575 L12.2389467,19.8175168 C12.0204224,19.4148697 11.5994762,19.1629686 11.1406273,19.1602644 C10.6817784,19.1575603 10.2578802,19.4044824 10.0346057,19.8045257 C9.81133126,20.204569 9.82413071,20.694217 10.0680017,21.0820995 L15.0238421,29.5518673 C15.3720282,30.145727 16.1344621,30.3490589 16.7330927,30.0077039 L36.7578338,18.5970446 C37.2523489,18.3247099 37.5042409,17.7567567 37.3737268,17.2083608 C37.2432126,16.659965 36.7623173,16.2656897 36.1979054,16.2443313 L36.1979054,16.2443313 Z" id="Path" fill="#1AA148" fill-rule="nonzero" transform="translate(23.641780, 23.208785) rotate(-15.000000) translate(-23.641780, -23.208785) "></path>
+                    <circle id="Oval" stroke="#1AA148" stroke-width="2.47258974" cx="22.5" cy="22.5" r="20.0897921"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
