@@ -15,7 +15,7 @@ function Home() {
     return (
         <>
             <main className="main--home">Home</main>
-            {chatIsOpen && <ChatBox />}
+            {chatIsOpen && <ChatBox setChatIsOpen={setChatIsOpen} />}
             <button type="button" className="chat-box__open-button" onClick={toggleChat}>
               <img src={chatIsOpen ? close : open} alt="close chat" className='chat-box__open-image' />
             </button>

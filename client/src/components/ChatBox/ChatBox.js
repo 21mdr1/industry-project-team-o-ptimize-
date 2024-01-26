@@ -1,8 +1,10 @@
+import backButton from '../../assets/icons/back-button.svg';
 import "./ChatBox.scss";
 
-function ChatBox() {
+function ChatBox({ setChatIsOpen }) {
     return <section className='chat-box'>
         <header className='chat-box__header'>
+            <img src={backButton} alt="Go Back" className='chat-box__back' onClick={() => setChatIsOpen(false)}/>
             <div className="header-avatar__container">
                 <div className="header-avatar__status"></div>
             </div>
