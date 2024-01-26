@@ -1,7 +1,10 @@
-import backButton from '../../assets/icons/back-button.svg';
+import backButton from "../../assets/icons/back-button.svg";
 import chat from '../../data/chatData';
-import Message from '../Message/Message';
+import mia from "../../assets/icons/bot-image.png";
+import Message from "../Message/Message";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./ChatBox.scss";
+import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 
 function ChatBox({ setChatIsOpen }) {
     return <section className='chat-box'>
@@ -29,6 +32,9 @@ function ChatBox({ setChatIsOpen }) {
                 type="text"
                 placeholder='Write a message'
             />
+            <div className="chat-box__icons">
+            <FontAwesomeIcon icon={faPaperPlane} />
+          </div>
         </form>
     </section>
 }
