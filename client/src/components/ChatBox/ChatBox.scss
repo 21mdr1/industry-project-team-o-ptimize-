@@ -45,6 +45,11 @@
 
     &__main {
         flex-grow: 1;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
     }
 
     &__date {
@@ -106,4 +111,97 @@
         bottom: -1.4rem;
         right: -1.4rem;;
     }
+}
+
+// message bubbles styles
+.message {
+    width: fit-content;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.45rem;
+    width: 100%;
+    padding: 0.7rem 0.5rem 0.7rem 0.95rem;
+
+    &--mia {
+        border-radius: 0rem 0.625rem 0.625rem 0.625rem;;
+        background-color: $chat-gray;
+        color: $chat-black;
+    }
+
+    &--user {
+        color: $white;
+        border-radius: 0.625rem 0rem 0.625rem 0.625rem;
+        background: $chat-navy;
+    }
+
+    &--loading {
+        border-radius: 20rem;
+        padding: 0.75rem 1rem;
+        width: fit-content;
+        @include flexbox(center, center);
+        column-gap: 0.4rem;
+    }
+
+    &__container {
+
+        &--mia {
+            @include flexbox(flex-start, flex-start);
+            column-gap: 0.4rem;
+            margin-left: 1rem;
+        }
+    }
+
+    &__content {
+        width: 17.6rem;
+        @include flexbox(flex-start, flex-start, column);
+
+        &--user {
+            margin-left: 3.4rem;
+            align-items: flex-end;
+        }
+    }
+
+    &__avatar {
+        background-color: $chat-navy;
+        border-radius: 20px; 
+        width: 2rem;
+        height: 2rem;
+        @include flexbox(center, center);
+    }
+
+    &__options {
+        @include flexbox(flex-start, flex-start, row, wrap, 0.6rem);
+    }
+
+    &__option {
+        border-radius: 0.25rem;
+        background-color: transparent;
+        border: 0.5px solid $chat-navy;
+        color: $chat-navy;
+        font-weight: 600;
+        padding: 0.48rem 0.77rem;
+        cursor: pointer;
+
+        &--clicked {
+            background-color: $chat-navy;
+            color: $white;
+        }
+    }
+
+    &__info {
+        color: $black;
+        font-weight: 600;
+        margin-bottom: 0.1rem;
+
+        &--user {
+            margin-left: auto;
+        }
+    }
+}
+
+.loading__ball {
+    width: 0.6rem;
+    height: 0.6rem;
+    background-color: #767D89;
+    border-radius: 10px;
 }
