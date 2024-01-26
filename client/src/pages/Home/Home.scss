@@ -6,11 +6,20 @@
 .chat-box {
     &--home {
         position: fixed;
-        bottom: 0;
-        right: 0;
+        bottom: 6rem;
+        right: 1rem;
     }
 
     &__open-button {
+        @include flexbox(center, center);
+        width: 3.86rem;
+        height: 3.86rem;
+        border: none;
+        border-radius: 50px;
         background-color: $chat-navy;
+
+        position: fixed;
+        bottom: 1rem;
+        right: 1rem;
     }
 }
