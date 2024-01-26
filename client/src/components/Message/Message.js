@@ -19,9 +19,9 @@ function Message({ message }) {
 
     return (
         <div className={`message__container message__container--${name}`}>
-            {avatar && (
-            <div className='message__avatar'>
-                <img src={avatar} alt={name} className='message__avatar-img' />
+            {name === "Mia" && (
+            <div className={`message__avatar ${avatar==='' && 'message__avatar--clear'}`}>
+                {avatar && <img src={avatar} alt={name} className='message__avatar-img' />}
             </div>)}
 
             <div className={`message__content message__content--${name}`}>
@@ -37,7 +37,7 @@ function Message({ message }) {
                 <div className='message__options'>
                     {buttons.map((button) => {
                         return (
-                            <button className="message__option">{button}</button>
+                            <button className={`message__option ${button.clicked && 'message__option--clicked'}`}>{button.text}</button>
                         )
                     })}
                 </div>)}

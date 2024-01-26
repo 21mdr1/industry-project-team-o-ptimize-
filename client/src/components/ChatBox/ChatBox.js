@@ -14,7 +14,7 @@ function ChatBox({ setChatIsOpen }) {
             "Suggested topics: ",
           ],
           buttons: [
-            "End Chat",
+            { text: "End Chat", clicked: true },
             "Family Vacations",
             "Best Places to Visit",
             "Our packages",
