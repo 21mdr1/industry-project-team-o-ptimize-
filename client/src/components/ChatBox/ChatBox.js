@@ -13,6 +13,17 @@ function ChatBox({ setChatIsOpen }) {
                 <h3 className='chat-box__subtitle'>How can I help you?</h3>
             </div>
         </header>
+        <section className='chat-box__main'>
+            <div className="chat-box__date">Today</div>
+            {/* messages here */}
+        </section>
+        <form className="chat-box__form">
+            <input 
+                className="chat-box__input"
+                type="text"
+                placeholder='Write a message'
+            />
+        </form>
     </section>
 }
 
