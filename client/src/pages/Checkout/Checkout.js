@@ -5,14 +5,14 @@ import successImg from "./../../assets/images/success.png";
 
 const customStyles = {
 	content: {
-		top: "auto",
-		left: "auto",
-		right: "20%",
-		bottom: "-20%",
+		top: "50%",
+		left: "50%",
+		right: "auto",
+		bottom: "auto",
 		marginRight: "-50%",
 		transform: "translate(-50%, -50%)",
 		border: "none",
-		outerWidth: "200px"
+		outerWidth: "200px",
 	},
 };
 
@@ -70,7 +70,7 @@ const Checkout = () => {
 					onRequestClose={closeModal}
 					style={customStyles}
 					contentLabel='Example Modal'
-				>	
+				>
 					<img src={successImg} />
 				</Modal>
 			</main>
