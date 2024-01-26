@@ -48,7 +48,11 @@ function ChatBox({ setChatIsOpen }) {
                 </div>
                 <div className='message__content message__content--mia'>
                     <p className='message__info message__info--mia'>Mia</p>
-                    <div className='message message--mia message--loading'></div>
+                    <div className='message message--mia message--loading'>
+                        <div className='loading__ball'></div>
+                        <div className='loading__ball'></div>
+                        <div className='loading__ball'></div>
+                    </div>
                 </div>
             </div>
         </section>

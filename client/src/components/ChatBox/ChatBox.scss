@@ -130,8 +130,11 @@
     }
 
     &--loading {
-        border-radius: 0.625rem;
+        border-radius: 20rem;
+        padding: 0.75rem 1rem;
         width: fit-content;
+        @include flexbox(center, center);
+        column-gap: 0.4rem;
     }
 
     &__container {
@@ -189,4 +192,11 @@
             margin-left: auto;
         }
     }
+}
+
+.loading__ball {
+    width: 0.6rem;
+    height: 0.6rem;
+    background-color: #767D89;
+    border-radius: 10px;
 }
