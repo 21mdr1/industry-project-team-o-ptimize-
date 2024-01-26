@@ -32,9 +32,11 @@ function ChatBox({ setChatIsOpen }) {
                 type="text"
                 placeholder='Write a message'
             />
+            <div className="chat-box__icons">
+            <FontAwesomeIcon icon={faPaperPlane} />
+          </div>
         </form>
     </section>
-  );
 }
 
 export default ChatBox;
