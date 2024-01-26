@@ -9,14 +9,12 @@ import './App.scss';
 function App() {
   return (
     <BrowserRouter>
-      <Header />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/checkout' element={<Checkout />} />
         {/* <Route path='/checkout-success' element={<CheckoutSuccess />} /> */}
         <Route path='*' element={<NotFoundPage />} />
       </Routes>
-      <Footer />
     </BrowserRouter>
   );
 }
