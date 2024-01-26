@@ -19,7 +19,9 @@ function ChatBox({ setChatIsOpen }) {
 
             {/* example messages */}
             <div className='message__container message__container--mia'>
-                <img src={mia} alt="mia" className='message__avatar' />
+                <div className='message__avatar'>
+                    <img src={mia} alt="mia" className='message__avatar-img' />
+                </div>
                 <div className='message__content message__content--mia'>
                     <p className='message__info message__info--mia'>Mia</p>
                     <p className='message message--mia'>This is a Mia message</p>
@@ -33,14 +35,21 @@ function ChatBox({ setChatIsOpen }) {
             </div>
 
             <div className='message__container message__container--user'>
-                <p className='message__info message__info--user'>You</p>
-                <p className='message message--user'>This is a user message</p>
-                <p className='message__info message__info--user'>05:13pm</p>
+                <div className='message__content message__content--user'>
+                    <p className='message__info message__info--user'>You</p>
+                    <p className='message message--user'>This is a user message</p>
+                    <p className='message__info message__info--user'>05:13pm</p>
+                </div>
             </div>
+
             <div className='message__container message__container--mia'>
-                <img src={mia} alt="mia" className='message__avatar' />
-                <p className='message__info message__info--mia'>Mia</p>
-                <div className='message message--mia message--loading'></div>
+                <div className='message__avatar'>
+                    <img src={mia} alt="mia" className='message__avatar-img' />
+                </div>
+                <div className='message__content message__content--mia'>
+                    <p className='message__info message__info--mia'>Mia</p>
+                    <div className='message message--mia message--loading'></div>
+                </div>
             </div>
         </section>
         <form className="chat-box__form">

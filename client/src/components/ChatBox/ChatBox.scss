@@ -114,9 +114,10 @@
     font-size: 1rem;
     font-weight: 600;
     margin-bottom: 0.45rem;
+    width: 100%;
+    padding: 0.7rem 0.5rem 0.7rem 0.95rem;
 
     &--mia {
-        padding: 0.7rem 0.95rem;
         border-radius: 0rem 0.625rem 0.625rem 0.625rem;;
         background-color: $chat-gray;
         color: $chat-black;
@@ -130,18 +131,34 @@
 
     &--loading {
         border-radius: 0.625rem;
+        width: fit-content;
     }
 
     &__container {
 
         &--mia {
-            @include flexbox;
+            @include flexbox(flex-start, flex-start);
             column-gap: 0.4rem;
+            margin-left: 1rem;
+        }
+    }
+
+    &__content {
+        width: 17.6rem;
+        @include flexbox(flex-start, flex-start, column);
+
+        &--user {
+            margin-left: 3.4rem;
+            align-items: flex-end;
         }
     }
 
     &__avatar {
         background-color: $chat-navy;
+        border-radius: 20px; 
+        width: 2rem;
+        height: 2rem;
+        @include flexbox(center, center);
     }
 
     &__options {
@@ -166,5 +183,10 @@
     &__info {
         color: $black;
         font-weight: 600;
+        margin-bottom: 0.1rem;
+
+        &--user {
+            margin-left: auto;
+        }
     }
 }
