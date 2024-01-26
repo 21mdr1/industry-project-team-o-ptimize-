@@ -1,0 +1,41 @@
+@use '../../styles/partials/global' as *;
+@use '../../styles/partials/fonts' as *;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/variables' as *;
+
+.flex {
+    @include flexbox(flex-start, flex-start, column, nowrap, 0.5rem);
+    margin: 1rem 0;
+}
+
+.blue {
+    @include button($rc-blue, $white);
+}
+
+.yellow {
+    @include button;
+}
+
+.h1 {
+    @include h1($rc-navy);
+}
+
+.h2 {
+    @include h2;
+}
+
+.h3 {
+    @include h3;
+}
+
+.p1 {
+    @include p1;
+}
+
+.p2 {
+    @include p2;
+}
+
+.link {
+    @include link;
+}
