@@ -1,0 +1,109 @@
+@use '../../styles/partials/global' as *;
+@use '../../styles/partials/fonts' as *;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/variables' as *;
+
+.chat-box {
+    position: fixed;
+    bottom: 6rem;
+    right: 1rem;
+    background-color: $white;
+    border-radius: 10px;
+    width: 23.7rem;
+    height: 33.5rem;
+    border: 0.25px solid $black;
+    @include flexbox (flex-start, stretch, column);
+    
+    &__header {
+        position: sticky;
+        background-color: $chat-navy;
+        @include flexbox;
+        border-radius: 7px 7px 10px 10px;
+        padding: 1rem;
+    }
+
+    &__back {
+        margin-right: 2.19rem;
+        cursor: pointer;
+    }
+
+    &__headline {
+        padding-left: 0.67rem;
+    }
+
+    &__title {
+        @include p2($white);
+        font-size: 1.25rem;
+        line-height: 100%;
+    }
+
+    &__subtitle {
+        @include p2($white);
+        font-size: 1rem;
+        line-height: 100%;
+    }
+
+    &__main {
+        flex-grow: 1;
+    }
+
+    &__date {
+        position: sticky;
+        width: fit-content;
+        margin: auto;
+        margin-top: 0.94rem;
+        padding: 0.17rem 1.83rem;
+        background-color: $chat-navy;
+        border-radius: 20px;
+        @include p2($white);
+        line-height: 100%;
+        font-size: 1rem;
+    }
+
+    &__form {
+        position: sticky;
+        border-top: 0.5px solid $black;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1) inset;
+        bottom: 0;
+    }
+
+    &__input { 
+        border: none;
+        width: 100%;
+        font-size: 1.25rem;
+        padding: 0.98rem 1.08rem 1.48rem 1.08rem;
+        background-color: transparent;
+
+        &::placeholder {
+            font-family: $ProxNov;
+            font-size: 1.25rem;
+            color: #767D89
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.header-avatar {
+    &__container {
+        border: 3px solid $white;
+        width: 2.25rem;
+        height: 2.25rem;
+        border-radius: 20px;
+        background-image: url('../../assets/icons/bot-image.png');
+        background-position: 50% 50%;
+    }
+
+    &__status {
+        background-color: #08B22D;
+        border: 2px solid $white;
+        border-radius: 20px;
+        width: 0.7rem;
+        height: 0.7rem;
+        position: relative;
+        bottom: -1.4rem;
+        right: -1.4rem;;
+    }
+}

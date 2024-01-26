@@ -10,39 +10,18 @@
   aspect-ratio: 20/13;
 }
 
-.flex {
-  @include flexbox(flex-start, flex-start, column, nowrap, 0.5rem);
-  margin: 1rem 0;
-}
+.chat-box {
+    &__open-button {
+        @include flexbox(center, center);
+        width: 3.86rem;
+        height: 3.86rem;
+        border: none;
+        border-radius: 50px;
+        background-color: $chat-navy;
 
-.blue {
-  @include button($rc-blue, $white);
-}
-
-.yellow {
-  @include button;
-}
-
-.h1 {
-  @include h1($rc-navy);
-}
-
-.h2 {
-  @include h2;
-}
-
-.h3 {
-  @include h3;
-}
-
-.p1 {
-  @include p1;
-}
-
-.p2 {
-  @include p2;
-}
-
-.link {
-  @include link;
+        position: fixed;
+        bottom: 1rem;
+        right: 1rem;
+        cursor: pointer;
+    }
 }
