@@ -11,12 +11,6 @@
 }
 
 .chat-box {
-    &--home {
-        position: fixed;
-        bottom: 6rem;
-        right: 1rem;
-    }
-
     &__open-button {
         @include flexbox(center, center);
         width: 3.86rem;

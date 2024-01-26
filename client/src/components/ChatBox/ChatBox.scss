@@ -4,9 +4,16 @@
 @use '../../styles/partials/variables' as *;
 
 .chat-box {
-    background-color: red;
+    position: fixed;
+    bottom: 6rem;
+    right: 1rem;
+    background-color: $white;
     border-radius: 10px;
-
     width: 23.7rem;
     height: 33.5rem;
+
+    &__header{
+        position: fixed;
+        background-color: $chat-navy;
+    }
 }
