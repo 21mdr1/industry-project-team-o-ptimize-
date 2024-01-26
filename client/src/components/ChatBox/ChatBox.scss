@@ -107,3 +107,30 @@
         right: -1.4rem;;
     }
 }
+
+// message bubbles styles
+.message {
+    width: fit-content;
+    font-size: 1rem;
+    font-weight: 600;
+
+    &--mia {
+        border-radius: 0rem 0.625rem 0.625rem 0.625rem;;
+        background-color: $chat-gray;
+        color: $chat-black;
+    }
+
+    &--user {
+        color: $white;
+        border-radius: 0.625rem 0rem 0.625rem 0.625rem;
+        background: $chat-navy;
+    }
+
+    &--loading {
+        border-radius: 0.625rem;
+    }
+
+    &__avatar {
+        background-color: $chat-navy;
+    }
+}

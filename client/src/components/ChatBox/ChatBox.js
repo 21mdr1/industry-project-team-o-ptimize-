@@ -1,4 +1,5 @@
 import backButton from '../../assets/icons/back-button.svg';
+import mia from '../../assets/icons/bot-image.png';
 import "./ChatBox.scss";
 
 function ChatBox({ setChatIsOpen }) {
@@ -15,7 +16,26 @@ function ChatBox({ setChatIsOpen }) {
         </header>
         <section className='chat-box__main'>
             <div className="chat-box__date">Today</div>
-            {/* messages here */}
+
+            {/* example messages */}
+            <div className='message__container message__container--mia'>
+                <img src={mia} alt="mia" className='message__avatar' />
+                <p className='message message--mia'>This is a Mia message</p>
+                <p className='message message--mia'>There are two of them</p>
+                <div>
+                    <div className="message__option">Option 1</div>
+                    <div className="message__option">Option 2</div>
+                    <div className="message__option message__option--clicked">Clicked Option</div>
+                </div>
+            </div>
+
+            <div className='message__container message__container--user'>
+                <p className='message message--user'>This is a user message</p>
+            </div>
+            <div className='message__container message__container--mia'>
+                <img src={mia} alt="mia" className='message__avatar' />
+                <div className='message message--mia message--loading'></div>
+            </div>
         </section>
         <form className="chat-box__form">
             <input 
