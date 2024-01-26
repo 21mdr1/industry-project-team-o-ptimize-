@@ -45,6 +45,11 @@
 
     &__main {
         flex-grow: 1;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
     }
 
     &__date {
