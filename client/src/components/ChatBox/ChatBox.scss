@@ -122,13 +122,13 @@
     width: 100%;
     padding: 0.7rem 0.5rem 0.7rem 0.95rem;
 
-    &--mia {
+    &--Mia {
         border-radius: 0rem 0.625rem 0.625rem 0.625rem;;
         background-color: $chat-gray;
         color: $chat-black;
     }
 
-    &--user {
+    &--You {
         color: $white;
         border-radius: 0.625rem 0rem 0.625rem 0.625rem;
         background: $chat-navy;
@@ -144,7 +144,7 @@
 
     &__container {
 
-        &--mia {
+        &--Mia {
             @include flexbox(flex-start, flex-start);
             column-gap: 0.4rem;
             margin-left: 1rem;
@@ -155,7 +155,7 @@
         width: 17.6rem;
         @include flexbox(flex-start, flex-start, column);
 
-        &--user {
+        &--You {
             margin-left: 3.4rem;
             align-items: flex-end;
         }
@@ -193,7 +193,7 @@
         font-weight: 600;
         margin-bottom: 0.1rem;
 
-        &--user {
+        &--You {
             margin-left: auto;
         }
     }
