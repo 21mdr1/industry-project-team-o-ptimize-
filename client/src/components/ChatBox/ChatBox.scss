@@ -113,8 +113,10 @@
     width: fit-content;
     font-size: 1rem;
     font-weight: 600;
+    margin-bottom: 0.45rem;
 
     &--mia {
+        padding: 0.7rem 0.95rem;
         border-radius: 0rem 0.625rem 0.625rem 0.625rem;;
         background-color: $chat-gray;
         color: $chat-black;
@@ -130,7 +132,39 @@
         border-radius: 0.625rem;
     }
 
+    &__container {
+
+        &--mia {
+            @include flexbox;
+            column-gap: 0.4rem;
+        }
+    }
+
     &__avatar {
         background-color: $chat-navy;
+    }
+
+    &__options {
+        @include flexbox(flex-start, flex-start, row, wrap, 0.6rem);
+    }
+
+    &__option {
+        border-radius: 0.25rem;
+        background-color: transparent;
+        border: 0.5px solid $chat-navy;
+        color: $chat-navy;
+        font-weight: 600;
+        padding: 0.48rem 0.77rem;
+        cursor: pointer;
+
+        &--clicked {
+            background-color: $chat-navy;
+            color: $white;
+        }
+    }
+
+    &__info {
+        color: $black;
+        font-weight: 600;
     }
 }

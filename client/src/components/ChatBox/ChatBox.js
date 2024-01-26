@@ -20,20 +20,26 @@ function ChatBox({ setChatIsOpen }) {
             {/* example messages */}
             <div className='message__container message__container--mia'>
                 <img src={mia} alt="mia" className='message__avatar' />
-                <p className='message message--mia'>This is a Mia message</p>
-                <p className='message message--mia'>There are two of them</p>
-                <div>
-                    <div className="message__option">Option 1</div>
-                    <div className="message__option">Option 2</div>
-                    <div className="message__option message__option--clicked">Clicked Option</div>
+                <div className='message__content message__content--mia'>
+                    <p className='message__info message__info--mia'>Mia</p>
+                    <p className='message message--mia'>This is a Mia message</p>
+                    <p className='message message--mia'>There are two of them</p>
+                    <div className='message__options'>
+                        <div className="message__option">Option 1</div>
+                        <div className="message__option">Option 2</div>
+                        <div className="message__option message__option--clicked">Clicked Option</div>
+                    </div>
                 </div>
             </div>
 
             <div className='message__container message__container--user'>
+                <p className='message__info message__info--user'>You</p>
                 <p className='message message--user'>This is a user message</p>
+                <p className='message__info message__info--user'>05:13pm</p>
             </div>
             <div className='message__container message__container--mia'>
                 <img src={mia} alt="mia" className='message__avatar' />
+                <p className='message__info message__info--mia'>Mia</p>
                 <div className='message message--mia message--loading'></div>
             </div>
         </section>
